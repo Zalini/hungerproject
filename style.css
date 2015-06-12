@@ -2,6 +2,7 @@
 *{
 	text-decoration: none;
 	list-style-type: none;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 body {
@@ -17,8 +18,8 @@ a {
 	text-align: center;
 	background: #26A73A;
 	font-size: 18px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 #donate {
@@ -81,6 +82,7 @@ a {
 #work{
 	width: 900px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 
@@ -100,7 +102,6 @@ a {
 
 #list h1{
 	font-size: 25px;
-
 }
 
 #list li {
