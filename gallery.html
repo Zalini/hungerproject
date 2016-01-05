@@ -4,13 +4,14 @@
 	<title>Operation FEED NYC</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery.js"></script>
+
+	<meta name=“viewport” content=“initial-scale=1”>
 </head>
 
 <body>
 <div id="header">
 	<h1>Operation FEED NYC</h1>
 		<h4>Do your part to alleviate hunger!</h4>
-			<a href="http://www.wscah.org/donate/" TARGET="_blank"><button id="donate">Donate</button></a>
 </div>
 
 
@@ -98,9 +99,6 @@
 		<a href="http://linkedin.com" TARGET="_blank"><img src="images/linkedin1.png" height="30px" width="30px"/></a>
 	</div>
 
-	<div class="buttons">
-		<a href="http://pinterest.com" TARGET="_blank"><img src="images/pin.jpg" height="30px" width="30px"/></a>
-	</div>
 
 	<div class="buttons">
 		<a href="https://accounts.google.com/" TARGET="_blank"><img src="images/googleplus.jpg" height="30px" width="30px"/></a>
@@ -118,6 +116,20 @@
 
 		$(".pics").hide().fadeIn(5000);
 		});
+
+		$(".pics").mouseover(function() {
+			$(this).css("opacity","0.5");
+		});
+		$(".pics").mouseleave(function() {
+			$(this).css("opacity","1");
+
+			});
+
+
+		
+
+		
+
 
 </script>
 
