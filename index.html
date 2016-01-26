@@ -3,25 +3,24 @@
 <head>
 	<title>Operation FEED NYC</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="jquery.js"></script>
-
 	<meta name=“viewport” content=“initial-scale=1”>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="script.js"></script>
 </head>
 
 <body>
 <div id="header">
 	<h1>Operation FEED NYC</h1>
-		<h4>Do your part to alleviate hunger!</h4>
+	<h4>Do your part to alleviate hunger!</h4>
 </div>
 
 <div id="navi">
-		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<a href="about.html"><li>Hunger in NYC</li></a>
-			<a href="work.html"><li>Our Work</li></a>
-			<a href="gallery.html"><li>How can I help?</li></a>
-			<a href="contact.html"><li>Contact</li></a>
-		</ul>
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="hungerInfo.html"><li>Hunger in NYC</li></a>
+		<a href="work.html"><li>Our Work</li></a>
+		<a href="gallery.html"><li>How can I help?</li></a>
+	</ul>
 </div>
 
 <div id="main-content">
@@ -31,23 +30,54 @@
 
 	<p class="three">This is an issue that we can combat, but we need your help.</p>
 
-	<img class="four" src="images/hunger.jpg" width="500px" height="420px"/>
+	<img class="mcImage" src="images/hunger.jpg" width="500px" height="420px"/>
+</div>
+<div class="centered">
+<div class="facts">
+	<h2>Facts</h2>
+	<ul>
+		<li>&#10148; The unfortunate reality is too many people go without the proper nutrition they need each day to properly function in New York City</li>
+			<br>
+		<li>&#10148; Food insecure households usually have to decide between purchasing nutritious foods and paying housing or medical bills</li>
+			<br>
+		<li>&#10148; The average cost of a meal in New York City is $3.37</li>
+		<br>
+		<li>&#10148; A lack of nutritious foods impacts both physical and mental well-being</li>
+	</ul>
 </div>
 
 
+<div class="facts">
+	<img src="images/hand.png"/>
+	<a href="work.html"><h2 id="workBlurb">We operate 7 days a week, working each day with the community to provide food to 100 families and counting. We also provide scheduled drop offs for those who are not able to come to our location.</h2></a>
+</div>
+</div>
 
 
+<div class="centered">
+	<a href="gallery.html"><h2>What can you do to help?</h2></a>
+	<div class="helpIcons">
+		<img src="images/donate.png"/>
+		<p>Donate food items</p>
+	</div>
 
+	<div class="helpIcons"> 
+		<img src="images/giving.png"/>
+		<p>Donate money</p>
+	</div>
+
+	<div class="helpIcons">
+		<img src="images/fruit.png"/>
+		<p>Donate your time</p>
+	</div>
+
+	<div class="helpIcons">
+		<img src="images/society.png"/>
+		<p>Share on Social Media</p>
+	</div>
+</div>
 
 <div id="social">
-	<div class="buttons">
-		<a href="http://facebook.com" TARGET="_blank"><img src="images/fblogo.jpg" height="30px" width="30px"/></a>
-	</div>
-
-	<div class="buttons">
-		<a href="http://twitter.com" TARGET="_blank"><img src="images/tlogo.jpg" height="30px" width="30px"/></a>
-	</div>
-
 	<div class="buttons">
 		<a href="http://linkedin.com" TARGET="_blank"><img src="images/linkedin1.png" height="30px" width="30px"/></a>
 	</div>
@@ -57,25 +87,27 @@
 	</div>
 </div>
 
+<div id="footer">
+	<div class="floatBoxes">
+	<h2>Contact Us:</h2>
+	<ul>
+		<li>Phone: (212)888-9999</li>
+		<li>Fax: (212)123-4567</li>
+		<a href="http://gmail.com"><li>Email: info@feednyc.org</li></a>
+	</ul>
+</div>
 
+<div class="floatBoxes">
+	<h2>Location:</h2>
+	<ul>
+		<li> Operation Feed NYC</li>
+		<li> 7777 Main Street</li>
+		<li> New York, NY 10001</li>
+	</ul>
+</div>
 
-<footer>
-	<p> &copy;, ALL RIGHTS RESERVED, OPERATION FEED NYC, INC</p>
-</footer>
-
-
-<script>
-	$(document).ready(function() {
-
-		$(".one").hide().fadeIn(4000);
-		$(".two").hide().fadeIn(5000);
-		$(".three").hide().fadeIn(6000);
-		$(".four").hide().fadeIn(7000);
-
-
-
-	});
-</script>
+<p> &copy;, ALL RIGHTS RESERVED, OPERATION FEED NYC, INC</p>
+</div>
 
 
 </body>

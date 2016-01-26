@@ -1,5 +1,4 @@
 /*for all pages*/
-
 @font-face {
 	font-family: xFont;
 	src: url(xFont/xFont.ttf);
@@ -10,15 +9,19 @@
 	list-style-type: none;
 }
 
-
 body {
 	background: #fff;
 	color: #114C37;
 	margin: 0px;
+	font-family: palatino;
 }
 
 a {
 	color: #25A378;
+}
+
+h1, h2 {
+	font-family: xFont;
 }
 
 #header {
@@ -28,23 +31,22 @@ a {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-family: xFont;
-	width: 800px;
+	width: 900px;
 	margin: 0 auto;
+	opacity: 0.9;
 }
 
 #navi {
 	float: left;
-
 }
 
 #navi a{
 	display: block;
 	margin-left: 0px;
 	margin-bottom: 10px;
-	padding-left: 0px;
 	font-size: 18px;
+	font-family: xFont;
 }
-
 
 #navi a:hover{
 	color: black;
@@ -58,32 +60,149 @@ a {
 
 
 
-
-
-
 /*homepage*/
 #main-content {
 	text-align: center;	
 	font-size: 16px;
-	width: 800px;
+	width: 900px;
 	margin: 0 auto;
-	
 }
 
-.four {
+.mcImage{
 	width: 720px;
 	margin: 0 auto;
-	border-radius: 40px;
+	margin-bottom: 30px;
+}
+
+.centered {
+	clear: both;
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #d3d3d3;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
+}
+
+.floatBoxes {
+	display: inline-block;
+	width: 420px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+
+
+/*graph and facts*/
+.facts {
+	line-height: 1.5em;
+	text-align: left;
+	width: 420px;
+	margin: 0 auto;
+	background-color: #d3d3d3;
+	display: inline-block;
+}
+
+.facts img {
+	position: relative;
+	right: -100px;
+}
+
+#workBlurb {
+	text-align: center;
+	width: 420px;
+	line-height: 1.5em;
+	margin-top: 15px;
+	font-family: palatino;
+}
+
+#containerBox {
+    margin: 0 auto;
+    border: 5px #26A73A solid;
+    box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
+}
+
+.helpIcons {
+	display: inline-block;
+	margin: 20px;
+	border-bottom: solid 3px #26A73A;
+	width: 170px;
+	height: 120px;
 }
 
 
 
 /*hunger in nyc*/
-#food-info {
-	width: 900px;
-	margin: 0 auto;
-	text-align: center;
+.graph {
+	position: relative;
+	top: -140px;
+	
 }
+
+#box1 {
+    width: 18.8%;
+    height: 35px;
+    background-color: #57B27E;
+    animation-name: boxOne;
+    animation-duration: 2s;
+}
+
+@keyframes boxOne{
+    0%   {width:0px;}
+    100% {width:18.8%;}
+}
+
+#box2 {
+    width: 19.8%;
+    height: 35px;
+    background-color: #57B27E;
+    animation-name: boxTwo;
+    animation-duration: 2s;
+}
+
+@keyframes boxTwo {
+    0%   {width:0px;}
+    100% {width: 19.8%;}
+}
+
+#box3 {
+    width: 15.3%;
+    height: 35px;
+    background-color: #57B27E;
+    animation-name: boxThree;
+    animation-duration: 2s;
+}
+
+@keyframes boxThree {
+    0%   {width: 0px;}
+    100% {width: 15.3%;}
+}
+
+#box4 {
+    width: 13.3%;
+    height: 35px;
+    background-color: #57B27E;
+    animation-name: boxFour;
+    animation-duration: 2s;
+}
+
+@keyframes boxFour {
+    0%   {width: 0px;}
+    100% {width: 13.3%;}
+}
+
+#box5 {
+    width: 10.6%;
+    height: 35px;
+    background-color: #57B27E;
+    animation-name: boxFive;
+    animation-duration: 2s;
+}
+
+@keyframes boxFive {
+    0%   {width: 0px;}
+    100% {width: 10.6%;}
+}
+
 
 
 /*our work*/
@@ -91,8 +210,27 @@ a {
 	width: 900px;
 	margin: 0 auto;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
+#work h3 {
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+#work p { 
+	line-height: 2em;
+
+}
+
+#work h2{
+	margin-top: 50px;
+}
+
+#work h1 {
+	font-size: 25px;
+	text-decoration: overline;
+}
 
 
 /*gallery*/
@@ -128,41 +266,17 @@ a {
 	margin-bottom: 10px;
 }
 
-.box2 img {
-	border-radius: 10px;
-}
-
-
-
-/*contact info*/
-.misc {
-	width: 20%;
-	float: left;
-}
-
-.misc img {
-	border-radius: 40px;
-	margin-right: 10px;
-}
-
-.message table {
-	clear: both;
-	width: 350px;
-	height:250px;
-	margin-left: 50px;
-}
-
-.message h4 {
-	text-align: center;
-}
-
 
 
 /*footer*/
-footer {
+#footer {
 	clear: both;
 	background-color: #26A73A;
 	font-size: 10px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 10px;
 }
+
+
+

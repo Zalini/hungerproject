@@ -3,8 +3,7 @@
 <head>
 	<title>Operation FEED NYC</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="jquery.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<meta name=“viewport” content=“initial-scale=1”>
 </head>
 
@@ -19,10 +18,9 @@
 	<div class="tabs">
 		<ul>
 			<a href="index.html"><li>Home</li></a>
-			<a href="about.html"><li>Hunger in NYC</li></a>
+			<a href="hungerInfo.html"><li>Hunger in NYC</li></a>
 			<a href="work.html"><li>Our Work</li></a>
 			<a href="gallery.html"><li>How can I help?</li></a>
-			<a href="contact.html"><li>Contact</li></a>
 		</ul>
 	</div>
 </div>
@@ -63,38 +61,7 @@
 	</div>
 
 
-<div id="donation-form">
-<form>
-	<input type="radio" name="amount" value="$10" checked>$10
-		<br>
-	<input type="radio" name="amount" value="$25">$25
-		<br>
-	<input type="radio" name="amount" value="$50" checked>$50
-		<br>
-	<input type="radio" name="amount" value="$100" checked>$100
-		<br>
-	<input type="radio" name="amount" value="other amount" checked>Other amount 
-			<br><textarea></textarea>
-			<br>
-	<button>Donate</button>
-</form>
-</div>
-
-
-
-
-
-
-
 <div id="social">
-	<div class="buttons">
-		<a href="http://facebook.com" TARGET="_blank"><img src="images/fblogo.jpg" height="30px" width="30px"/></a>
-	</div>
-
-	<div class="buttons">
-		<a href="http://twitter.com" TARGET="_blank"><img src="images/tlogo.jpg" height="30px" width="30px"/></a>
-	</div>
-
 	<div class="buttons">
 		<a href="http://linkedin.com" TARGET="_blank"><img src="images/linkedin1.png" height="30px" width="30px"/></a>
 	</div>
@@ -105,33 +72,29 @@
 	</div>
 </div>
 
-<footer>
-	<p>&copy;, ALL RIGHTS RESERVED, OPERATION FEED NYC, INC</p>
-</footer>
+<div id="footer">
+	<div class="floatBoxes">
+	<h2>Contact Us:</h2>
+	<ul>
+		<li>Phone: (212)888-9999</li>
+		<li>Fax: (212)123-4567</li>
+		<a href="http://gmail.com"><li>Email: info@feednyc.org</li></a>
+	</ul>
+	</div>
+
+	<div class="floatBoxes">
+		<h2>Location:</h2>
+		<ul>
+			<li> Operation Feed NYC</li>
+			<li> 7777 Main Street</li>
+			<li> New York, NY 10001</li>
+		</ul>
+	</div>
+
+	<p> &copy;, ALL RIGHTS RESERVED, OPERATION FEED NYC, INC</p>
+</div>
 
 
-
-<script>
-	$(document).ready(function() {
-
-		$(".pics").hide().fadeIn(5000);
-		});
-
-		$(".pics").mouseover(function() {
-			$(this).css("opacity","0.5");
-		});
-		$(".pics").mouseleave(function() {
-			$(this).css("opacity","1");
-
-			});
-
-
-		
-
-		
-
-
-</script>
 
 
 </body>
