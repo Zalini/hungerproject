@@ -31,7 +31,7 @@ h1, h2 {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-family: xFont;
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 	opacity: 0.9;
 }
@@ -135,7 +135,6 @@ h1, h2 {
 .graph {
 	position: relative;
 	top: -140px;
-	
 }
 
 #box1 {
@@ -206,64 +205,33 @@ h1, h2 {
 
 
 /*our work*/
-#work{
-	width: 900px;
-	margin: 0 auto;
-	padding-bottom: 50px;
-	text-align: center;
+#ourWork {
+	position: relative;
+	top: -140px;
 }
 
-#work h3 {
-	margin-top: 50px;
-	font-weight: bold;
-}
-
-#work p { 
-	line-height: 2em;
-
-}
-
-#work h2{
-	margin-top: 50px;
-}
-
-#work h1 {
-	font-size: 25px;
-	text-decoration: overline;
-}
 
 
 /*gallery*/
-#donation-form {
-	position: absolute;
-	top: 200px;
-	right: 50px;
-}
-
-#list {
-	width: 900px;
-	margin: 0 auto; 
+#testDiv {
+	width: 800px;
+	margin: 0 auto;
 	text-align: center;
 }
 
-#list h1{
-	font-size: 25px;
-}
-
-#list li {
-	font-size: 20px;
-}
-
-.box {
-	width: 430px;
-	float: left;
-}
-
-.box2 {
+.photosIndiv {
+	clear: both;
+	height: 570px;
+	width: 100%;
+	display: inline-block;
 	padding-top: 10px;
-	padding-bottom: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+}
+
+.photosIndiv img {
+	width: 650px;
+	height: 450px;
 }
 
 
@@ -278,5 +246,22 @@ h1, h2 {
 	margin-top: 10px;
 }
 
+#footer li {
+	font-size: 16px;
+}
 
+#footer a {
+	color: #114C37;
+}
 
+/*form {
+	position: relative;
+	top: 1px;
+}*/
+
+input {
+	width: 170px;
+	height: 30px;
+	color: green;
+	font-size: 25px;
+}
