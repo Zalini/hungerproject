@@ -13,6 +13,7 @@ body {
 	background: #fff;
 	color: #114C37;
 	margin: 0px;
+	padding: 0px;
 	font-family: palatino;
 }
 
@@ -24,20 +25,48 @@ h1, h2 {
 	font-family: xFont;
 }
 
+p{
+	line-height: 1.3em;
+}
+
+#menuIcon {
+	display: none;
+}
+
+.dividingLine {
+	background: #25A378;
+	width: 70%;
+	height: 5px;
+	margin: 0 auto;
+}
+
 #header {
 	text-align: center;
 	background: #26A73A;
-	font-size: 1em;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 1px;
 	font-family: xFont;
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
-	opacity: 0.9;
+	height: 90px;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
 }
+
+#header h1 {
+	font-size: 33px;
+	position: relative;
+	top: -20px;
+}
+
+#header p{
+	position: relative;
+	top: -30px;
+}
+
 
 #navi {
 	float: left;
+	position: relative;
+	left: -20px;
 }
 
 #navi a{
@@ -54,7 +83,7 @@ h1, h2 {
 
 #social {
 	position: fixed;
-	top: 0px;
+	bottom: 0px;
 	right: 3px;
 }
 
@@ -64,19 +93,19 @@ h1, h2 {
 #main-content {
 	text-align: center;	
 	font-size: 16px;
-	width: 900px;
+	width: 70%;
 	margin: 0 auto;
 }
 
 .mcImage{
-	width: 720px;
+	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.2); 
 }
 
 .centered {
 	clear: both;
-	width: 900px;
+	width: 65%;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #d3d3d3;
@@ -104,7 +133,7 @@ h1, h2 {
 
 .facts img {
 	position: relative;
-	right: -100px;
+	right: -125px;
 }
 
 #workBlurb {
@@ -136,6 +165,12 @@ h1, h2 {
 	position: relative;
 	top: -140px;
 }
+
+.graphContainer {
+	position: relative;
+	top: -30px;
+}
+
 
 #box1 {
     width: 18.8%;
@@ -210,28 +245,38 @@ h1, h2 {
 	top: -140px;
 }
 
+.foodBlurb {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.foodBlurb h2, h3, p {
+	line-height: 2em;
+}
+
 
 
 /*gallery*/
 #testDiv {
-	width: 800px;
+	width: 66%;
 	margin: 0 auto;
 	text-align: center;
+	background-color: #d3d3d3;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
 }
 
-.photosIndiv {
-	clear: both;
-	height: 570px;
-	width: 100%;
+/*.photosIndiv {
 	display: inline-block;
-	padding-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
+	margin: 20px;
+	width: 450px;
+
+	border: red solid 1px;
+}*/
 
 .photosIndiv img {
-	width: 650px;
-	height: 450px;
+	width: 80%;
+	height: 30%;
+	border: rgba(0, 0, 0, 0.3) solid 3px;
 }
 
 
@@ -243,7 +288,22 @@ h1, h2 {
 	font-size: 10px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	margin-top: 10px;
+	margin-top: 30px;
+	box-shadow: 5px -5px 5px rgba(88, 26, 32, 0.3);
+}
+
+.footerCentered {
+	clear: both;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footerBoxes {
+	display: inline-block;
+	width: 220px;
+	margin: 0 auto;
+	margin-right: 50px;
 }
 
 #footer li {
@@ -254,14 +314,54 @@ h1, h2 {
 	color: #114C37;
 }
 
-/*form {
-	position: relative;
-	top: 1px;
-}*/
-
 input {
-	width: 170px;
-	height: 30px;
+	width: 160px;
+	height: 25px;
 	color: green;
-	font-size: 25px;
+	font-size: 20px;
+}
+
+@media all and (max-width: 900px){
+/*	body{
+		background-color: yellow;
+	}*/
+}
+
+@media all and (max-width: 600px){
+	#navi a {
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px;
+	}
+
+	#navi ul{
+		display: none;
+	}
+	
+	#menuIcon {
+		display: block;
+	}
+
+	.mcImage {
+		display: none;
+	}
+
+	.centered, #ourWork, #testDiv {
+		float: left;
+		width: 100%;
+		position: initial;
+	}
+/*
+	#ourWork {
+		float: left;
+		width: 100%;
+		position: initial;	
+	}
+
+	#testDiv {
+		float: left;
+		width: 100%;
+		position: initial;
+	}*/
+
 }
