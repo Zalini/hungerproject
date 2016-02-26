@@ -4,11 +4,7 @@ $(document).ready(function() {
 	$(".three").hide().fadeIn(6000);
 	$(".four").hide().fadeIn(7000);
 
-
 	$("#menuIcon").on("click", function(){
 		$("#navi ul").slideToggle();	
-
 	});
-
-
 });
