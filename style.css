@@ -302,7 +302,7 @@ input {
 
 @media all and (max-width: 900px){
 	.centered, #testDiv {
-		width: 55%;
+		width: 100%;
 	}
 	
 	.graphContainer {
@@ -311,10 +311,22 @@ input {
 }
 
 @media all and (max-width: 660px){
+	#header, #main-content, .centered, #ourWork, #testDiv, #footer, #containerBox {
+		width: 100%;
+	}
+
+	#header h1{
+		font-size: 25px
+	}
+
+	.graph{
+		margin-top: 200px;
+	}
+
 	#navi a {
 		display: inline-block;
 		font-size: 16px;
-		margin: 4px;
+		margin: 0px 4px 10px 4px;
 	}
 
 	#navi ul{
@@ -323,15 +335,24 @@ input {
 	
 	#menuIcon {
 		display: block;
+		width: 10%;
+		float: left;
+	}
+
+	#navi {
+		width: 90%;
+		position: initial;
 	}
 
 	.mcImage {
 		display: none;
 	}
 
-	.centered, #ourWork, #testDiv {
-		float: left;
-		width: 100%;
-		position: initial;
+	#testDiv {
+		margin-top: 60px;
+	}
+
+	#ourWork {
+		margin-top: 200px;
 	}
 }
