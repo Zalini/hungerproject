@@ -10,7 +10,6 @@
 }
 
 body {
-	background: #fff;
 	color: #114C37;
 	margin: 0px;
 	padding: 0px;
@@ -25,43 +24,23 @@ h1, h2 {
 	font-family: xFont;
 }
 
-p{
-	line-height: 1.3em;
+p {
+	line-height: 1.1em;
 }
 
 #menuIcon {
 	display: none;
 }
 
-.dividingLine {
-	background: #25A378;
-	width: 70%;
-	height: 5px;
-	margin: 0 auto;
-}
-
 #header {
 	text-align: center;
 	background: #26A73A;
-	padding-top: 1px;
 	font-family: xFont;
 	width: 100%;
 	margin: 0 auto;
-	height: 90px;
+	height: 10%;
 	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
 }
-
-#header h1 {
-	font-size: 33px;
-	position: relative;
-	top: -20px;
-}
-
-#header p{
-	position: relative;
-	top: -30px;
-}
-
 
 #navi {
 	float: left;
@@ -71,7 +50,6 @@ p{
 
 #navi a{
 	display: block;
-	margin-left: 0px;
 	margin-bottom: 10px;
 	font-size: 18px;
 	font-family: xFont;
@@ -103,7 +81,7 @@ p{
 
 .centered {
 	clear: both;
-	width: 65%;
+	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #d3d3d3;
@@ -269,6 +247,7 @@ p{
 	padding-bottom: 3px;
 	margin-top: 30px;
 	box-shadow: 5px -5px 5px rgba(88, 26, 32, 0.3);
+	width: 100%;
 }
 
 .footerCentered {
@@ -283,6 +262,7 @@ p{
 	width: 220px;
 	margin: 0 auto;
 	margin-right: 50px;
+	text-align: left;
 }
 
 #footer li {
@@ -294,10 +274,21 @@ p{
 }
 
 input {
-	width: 160px;
+	width: 150px;
 	height: 25px;
 	color: green;
 	font-size: 20px;
+}
+
+button {
+	width: 50px;
+	height: 25px;
+	color: white;
+	background-color: #26A73A;
+	font-size: 10px;
+	margin-left: 5px;
+	position: relative;
+	top: -4px;
 }
 
 @media all and (max-width: 900px){
@@ -315,8 +306,8 @@ input {
 		width: 100%;
 	}
 
-	#header h1{
-		font-size: 25px
+	#header{
+		font-size: 14px
 	}
 
 	.graph{
@@ -325,7 +316,7 @@ input {
 
 	#navi a {
 		display: inline-block;
-		font-size: 16px;
+		font-size: 14px;
 		margin: 0px 4px 10px 4px;
 	}
 
@@ -335,7 +326,7 @@ input {
 	
 	#menuIcon {
 		display: block;
-		width: 10%;
+		width: 3%;
 		float: left;
 	}
 
@@ -354,5 +345,9 @@ input {
 
 	#ourWork {
 		margin-top: 200px;
+	}
+
+	.footerBoxes {
+		display: block;
 	}
 }
