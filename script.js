@@ -5,6 +5,6 @@ $(document).ready(function() {
 	$(".four").hide().fadeIn(7000);
 
 	$("#menuIcon").on("click", function(){
-		$("#navi ul").slideToggle();	
+		$("#toggleMenu").slideToggle();	
 	});
 });

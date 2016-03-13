@@ -24,39 +24,46 @@ h1, h2 {
 	font-family: xFont;
 }
 
-p {
-	line-height: 1.1em;
+header {
+	background: #26A73A;
+	text-align: center;
+	font-family: xFont;
+	line-height: 0px;
+	width: 100%;
+	height: 10%;
+	padding-top: 2px;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
+	
 }
 
 #menuIcon {
 	display: none;
 }
 
-#header {
-	text-align: center;
-	background: #26A73A;
-	font-family: xFont;
-	width: 100%;
-	margin: 0 auto;
-	height: 10%;
-	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
-}
-
-#navi {
+nav {
 	float: left;
 	position: relative;
 	left: -20px;
 }
 
-#navi a{
+nav a{
 	display: block;
 	margin-bottom: 10px;
 	font-size: 18px;
 	font-family: xFont;
 }
 
-#navi a:hover{
+nav a:hover{
 	color: black;
+}
+
+.centered {
+	clear: both;
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #d3d3d3;
+	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
 }
 
 #social {
@@ -68,36 +75,27 @@ p {
 /*homepage*/
 #main-content {
 	text-align: center;	
-	font-size: 16px;
+	font-size: 15px;
 	width: 70%;
 	margin: 0 auto;
 }
 
-.mcImage{
+.mainImg {
 	width: 100%;
 	margin: 0 auto;
 	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.2); 
 }
 
-.centered {
-	clear: both;
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-	background-color: #d3d3d3;
-	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
-}
-
 .floatBoxes {
 	display: inline-block;
-	width: 420px;
+	width: 60%;
 	margin: 0 auto;
 	padding: 5px;
 }
 
 /*graph and facts*/
 .facts {
-	line-height: 1.5em;
+	line-height: 1.3em;
 	text-align: left;
 	width: 420px;
 	margin: 0 auto;
@@ -121,7 +119,7 @@ p {
 #containerBox {
     margin: 0 auto;
     border: 5px #26A73A solid;
-    box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
+    box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3);
 }
 
 .helpIcons {
@@ -150,7 +148,6 @@ p {
     animation-name: boxOne;
     animation-duration: 2s;
 }
-
 @keyframes boxOne{
     0%   {width:0px;}
     100% {width:18.8%;}
@@ -163,7 +160,6 @@ p {
     animation-name: boxTwo;
     animation-duration: 2s;
 }
-
 @keyframes boxTwo {
     0%   {width:0px;}
     100% {width: 19.8%;}
@@ -176,7 +172,6 @@ p {
     animation-name: boxThree;
     animation-duration: 2s;
 }
-
 @keyframes boxThree {
     0%   {width: 0px;}
     100% {width: 15.3%;}
@@ -189,7 +184,6 @@ p {
     animation-name: boxFour;
     animation-duration: 2s;
 }
-
 @keyframes boxFour {
     0%   {width: 0px;}
     100% {width: 13.3%;}
@@ -202,7 +196,6 @@ p {
     animation-name: boxFive;
     animation-duration: 2s;
 }
-
 @keyframes boxFive {
     0%   {width: 0px;}
     100% {width: 10.6%;}
@@ -224,14 +217,6 @@ p {
 }
 
 /*gallery*/
-#testDiv {
-	width: 66%;
-	margin: 0 auto;
-	text-align: center;
-	background-color: #d3d3d3;
-	box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3); 
-}
-
 .photosIndiv img {
 	width: 80%;
 	height: 30%;
@@ -287,41 +272,99 @@ button {
 	background-color: #26A73A;
 	font-size: 10px;
 	margin-left: 5px;
-	position: relative;
-	top: -4px;
 }
 
 @media all and (max-width: 900px){
-	.centered, #testDiv {
-		width: 100%;
-	}
-	
-	.graphContainer {
-		max-width: 90%;
-	}
-}
-
-@media all and (max-width: 660px){
-	#header, #main-content, .centered, #ourWork, #testDiv, #footer, #containerBox {
+	#main-content {
+		margin-top: 90px;
 		width: 100%;
 	}
 
-	#header{
-		font-size: 14px
-	}
-
-	.graph{
+	.centered {
+		width: 100%;
 		margin-top: 200px;
 	}
 
-	#navi a {
+	.floatBoxes {
 		display: inline-block;
-		font-size: 14px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 5px;
+	}
+	
+	#menuIcon {
+		display: block;
+		width: 3%;
+		float: left;
+		margin-top: 12px;
+	}
+
+	#toggleMenu {
+		width: 90%;
+		display: none;
+	}
+
+	#toggleMenu a {
+		float: left;
+		display: inline;
+		font-size: 12px;
 		margin: 0px 4px 10px 4px;
 	}
 
-	#navi ul{
-		display: none;
+	.graphContainer {
+		max-width: 90%;
+	}
+
+/*Homepage facts*/
+.facts {
+	line-height: 1.2em;
+	text-align: left;
+	width: 100%;
+	float: left;
+}
+
+.facts img {
+	float: left;
+	position: relative;
+	left: 10px;
+}
+
+.facts h2 {
+	font-size: 22px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 5px solid #114C37;
+	padding-bottom: 10px;
+}
+
+#workBlurb {
+	text-align: center;
+	width: 100%;
+	line-height: 1.5em;
+	margin-top: 15px;
+	font-family: palatino;
+}
+
+#containerBox {
+    margin: 0 auto;
+    border: 5px #26A73A solid;
+    box-shadow: -5px 5px 5px rgba(88, 26, 32, 0.3);
+}
+
+.helpIcons {
+	display: inline-block;
+	margin: 20px;
+	border-bottom: solid 3px #26A73A;
+	width: 170px;
+	height: 120px;
+}
+}
+
+@media all and (max-width: 550px){
+	header {
+		height: 70px;
+		line-height: 0px;
 	}
 	
 	#menuIcon {
@@ -330,17 +373,12 @@ button {
 		float: left;
 	}
 
-	#navi {
-		width: 90%;
-		position: initial;
+	.facts {
+		position: relative;
+		top: -100px;
 	}
-
-	.mcImage {
+	.facts img {
 		display: none;
-	}
-
-	#testDiv {
-		margin-top: 60px;
 	}
 
 	#ourWork {
@@ -349,5 +387,5 @@ button {
 
 	.footerBoxes {
 		display: block;
-	}
+	}*/
 }
