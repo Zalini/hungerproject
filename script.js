@@ -7,4 +7,9 @@ $(document).ready(function() {
 	$("#menuIcon").on("click", function(){
 		$("#toggleMenu").slideToggle();	
 	});
+
+
+	$(".footerBoxes button").on("click", function(){
+		event.preventDefault();
+	});
 });
