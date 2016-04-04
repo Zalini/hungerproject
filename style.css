@@ -270,6 +270,11 @@ button {
 	border: rgba(0, 0, 0, 0.3) solid 3px;
 }
 
+#gallery {
+	position: relative;
+	top: -140px;
+}
+
 /*****************Media Queries******************/
 @media all and (max-width: 900px){
 .centered, #workBlurb {
@@ -354,8 +359,9 @@ button {
 	margin-top: 50px;
 }
 
-.gallery {
+#gallery {
 	margin-top: 50px;
+	
 }
 
 }
@@ -393,7 +399,7 @@ h5 {
 	width: 100%;
 }
 
-.gallery p, #containerBox p {
+#gallery p, #containerBox p {
 	line-height: 1em;
 	font-size: 12px;
 }
